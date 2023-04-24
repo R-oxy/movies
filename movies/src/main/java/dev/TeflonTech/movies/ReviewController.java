@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
+@CrossOrigin(origins="*")
 @RestController
 @RequestMapping("api/v1/reviews")
 public class ReviewController {
