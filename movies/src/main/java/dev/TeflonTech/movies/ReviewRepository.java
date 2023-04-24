@@ -1,12 +1,9 @@
 package dev.TeflonTech.movies;
 
-import java.util.Optional;
-
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface MovieRepository extends MongoRepository<Movie, ObjectId> {
-    Optional<Movie> findMovieByimdbId(String imdbId);
+public interface ReviewRepository extends MongoRepository<Review, ObjectId> {
 }
